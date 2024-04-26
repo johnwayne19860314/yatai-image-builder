@@ -1,0 +1,101 @@
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: pypi-pvc
+  namespace: pypi-mirror
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+---
+apiVersion: v1
+kind: Secret
+metadata:
+  name: pypisecret
+  namespace: pypi-mirror
+type: Opaque
+stringData:
+  username: ""
+  password: ""
+
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: "pypi-server"
+  namespace: pypi-mirror
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pypiserver
+  template:
+    metadata:
+      labels:
+        app: "pypiserver"
+    spec:
+      containers:
+      - name: "pypiserver"
+        image: pypiserver/pypiserver:latest
+        env:
+        - name: PYPI_USER
+          valueFrom:
+            secretKeyRef:
+              name: pypisecret
+              key: username
+        - name: PYPI_PASS
+          valueFrom:
+            secretKeyRef:
+              name: pypisecret
+              key: password
+        imagePullPolicy: Always
+        securityContext:
+          privileged: true
+        volumeMounts:
+        - mountPath: '/pypi-server/packages'
+          name: pypi-packages
+        ports:
+        - containerPort: 80
+          name: pypiserver
+      volumes:
+      - name: pypi-packages
+        persistentVolumeClaim:
+          claimName: pypi-pvc
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: pypiserver-service
+  namespace: pypi-mirror
+spec:
+  selector:
+    app: pypiserver
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  type: ClusterIP
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: "py-image"
+  namespace: pypi-mirror
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: py-image
+  template:
+    metadata:
+      labels:
+        app: "py-image"
+    spec:
+      containers:
+      - name: "py-image"
+        image: pyimage:v1
+        
+        imagePullPolicy: Always

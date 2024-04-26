@@ -1,0 +1,8 @@
+
+FROM pypiserver/pypiserver:latest
+
+
+COPY temp /pypi-server/packages
+
+
+CMD ["/entrypoint.sh", "run"]

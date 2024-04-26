@@ -1,0 +1,47 @@
+apiVersion: resources.yatai.ai/v1alpha1
+kind: Bento
+metadata:
+  creationTimestamp: '2024-02-22T07:38:35Z'
+  generation: 1
+  managedFields:
+    - apiVersion: resources.yatai.ai/v1alpha1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:ownerReferences:
+            .: {}
+            k:{"uid":"91a00eec-14f7-4065-9ca4-9110e72d2f00"}: {}
+        f:spec:
+          .: {}
+          f:context:
+            .: {}
+            f:bentomlVersion: {}
+          f:image: {}
+          f:runners: {}
+          f:tag: {}
+      manager: __debug_bin771084752
+      operation: Update
+      time: '2024-02-22T07:38:35Z'
+  name: doc-classifier--6-zhvoagqskfhrtvf
+  namespace: yatai
+  ownerReferences:
+    - apiVersion: resources.yatai.ai/v1alpha1
+      blockOwnerDeletion: true
+      controller: true
+      kind: BentoRequest
+      name: doc-classifier--6-zhvoagqskfhrtvf
+      uid: 91a00eec-14f7-4065-9ca4-9110e72d2f00
+  resourceVersion: '2070683'
+  uid: 88f934c8-217c-448c-8020-65b9a5c85b3a
+  selfLink: >-
+    /apis/resources.yatai.ai/v1alpha1/namespaces/yatai/bentoes/doc-classifier--6-zhvoagqskfhrtvf
+spec:
+  context:
+    bentomlVersion: 1.1.11
+  image: 127.0.0.1:5000/yatai-bentos:yatai.doc_classifier.6zhvoagqskfhrtvf
+  runners:
+    - modelTags:
+        - twenty_news_group:4o7badwqskg25tvf
+      name: twenty_news_group
+      runnableType: SklearnRunnable
+  tag: doc_classifier:6zhvoagqskfhrtvf

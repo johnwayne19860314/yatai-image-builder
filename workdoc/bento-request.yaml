@@ -1,0 +1,70 @@
+apiVersion: resources.yatai.ai/v1alpha1
+kind: BentoRequest
+metadata:
+  creationTimestamp: '2024-02-21T09:20:38Z'
+  generation: 1
+  managedFields:
+    - apiVersion: resources.yatai.ai/v1alpha1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:spec:
+          .: {}
+          f:bentoTag: {}
+      manager: __debug_bin4083203956
+      operation: Update
+      time: '2024-02-21T09:20:38Z'
+    - apiVersion: resources.yatai.ai/v1alpha1
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:status:
+          .: {}
+          f:conditions: {}
+          f:imageBuilderPodStatus: {}
+      manager: manager
+      operation: Update
+      subresource: status
+      time: '2024-02-22T10:04:12Z'
+  name: doc-classifier--6-zhvoagqskfhrtvf
+  namespace: yatai
+  resourceVersion: '2098191'
+  uid: 91a00eec-14f7-4065-9ca4-9110e72d2f00
+  selfLink: >-
+    /apis/resources.yatai.ai/v1alpha1/namespaces/yatai/bentorequests/doc-classifier--6-zhvoagqskfhrtvf
+status:
+  conditions:
+    - lastTransitionTime: '2024-02-21T09:20:38Z'
+      message: Starting to reconcile BentoRequest
+      reason: Reconciling
+      status: Unknown
+      type: ModelsSeeding
+    - lastTransitionTime: '2024-02-22T07:33:00Z'
+      message: >-
+        Image building job yatai-bento-image-builder-cnbfhas7sicck78hame0 is
+        running
+      reason: Reconciling
+      status: 'True'
+      type: ImageBuilding
+    - lastTransitionTime: '2024-02-22T07:38:34Z'
+      message: 127.0.0.1:5000/yatai-bentos:yatai.doc_classifier.6zhvoagqskfhrtvf
+      reason: Reconciling
+      status: 'True'
+      type: ImageExists
+    - lastTransitionTime: '2024-02-22T10:04:12Z'
+      message: >-
+        ensure image exists: check image
+        https://hub.docker.com/repositories/19860314/yatai-bentos:yatai.doc_classifier.6zhvoagqskfhrtvf
+        exists: create docker registry client for http://https:: Get
+        "http://https/v2/": dial tcp: lookup https on 10.96.0.10:53: no such
+        host
+      reason: Reconciling
+      status: 'False'
+      type: BentoAvailable
+    - lastTransitionTime: '2024-02-22T09:08:03Z'
+      message: >-
+        https://hub.docker.com/repositories/19860314/yatai-bentos:yatai.doc_classifier.6zhvoagqskfhrtvf
+      reason: Reconciling
+      status: Unknown
+      type: ImageExistsChecked
+  imageBuilderPodStatus: {}
+spec:
+  bentoTag: doc_classifier:6zhvoagqskfhrtvf

@@ -1,0 +1,341 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: yatai-bento-image-builder-cnbfhas7sicck78hame0
+  namespace: yatai
+  uid: c24a4a1f-30ad-4614-9f14-734bf34590e3
+  resourceVersion: '2070690'
+  generation: 1
+  creationTimestamp: '2024-02-22T07:32:59Z'
+  labels:
+    yatai.ai/bento: 6zhvoagqskfhrtvf
+    yatai.ai/bento-repository: doc_classifier
+    yatai.ai/bento-request: doc-classifier--6-zhvoagqskfhrtvf
+    yatai.ai/is-bento-image-builder: 'true'
+    yatai.ai/yatai-image-builder-separate-models: 'false'
+  annotations:
+    batch.kubernetes.io/job-tracking: ''
+    yatai.ai/bento-request-hash: '8622613589703499288'
+  ownerReferences:
+    - apiVersion: resources.yatai.ai/v1alpha1
+      kind: BentoRequest
+      name: doc-classifier--6-zhvoagqskfhrtvf
+      uid: 91a00eec-14f7-4065-9ca4-9110e72d2f00
+      controller: true
+      blockOwnerDeletion: true
+  managedFields:
+    - manager: __debug_bin771084752
+      operation: Update
+      apiVersion: batch/v1
+      time: '2024-02-22T07:32:59Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:metadata:
+          f:annotations:
+            .: {}
+            f:yatai.ai/bento-request-hash: {}
+          f:labels:
+            .: {}
+            f:yatai.ai/bento: {}
+            f:yatai.ai/bento-repository: {}
+            f:yatai.ai/bento-request: {}
+            f:yatai.ai/is-bento-image-builder: {}
+            f:yatai.ai/yatai-image-builder-separate-models: {}
+          f:ownerReferences:
+            .: {}
+            k:{"uid":"91a00eec-14f7-4065-9ca4-9110e72d2f00"}: {}
+        f:spec:
+          f:backoffLimit: {}
+          f:completionMode: {}
+          f:completions: {}
+          f:parallelism: {}
+          f:podFailurePolicy:
+            .: {}
+            f:rules: {}
+          f:suspend: {}
+          f:template:
+            f:metadata:
+              f:labels:
+                .: {}
+                f:yatai.ai/bento: {}
+                f:yatai.ai/bento-repository: {}
+                f:yatai.ai/bento-request: {}
+                f:yatai.ai/is-bento-image-builder: {}
+            f:spec:
+              f:containers:
+                k:{"name":"builder"}:
+                  .: {}
+                  f:args: {}
+                  f:command: {}
+                  f:env:
+                    .: {}
+                    k:{"name":"DOCKER_CONFIG"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                    k:{"name":"IFS"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                  f:image: {}
+                  f:imagePullPolicy: {}
+                  f:name: {}
+                  f:resources: {}
+                  f:stdin: {}
+                  f:terminationMessagePath: {}
+                  f:terminationMessagePolicy: {}
+                  f:tty: {}
+                  f:volumeMounts:
+                    .: {}
+                    k:{"mountPath":"/workspace"}:
+                      .: {}
+                      f:mountPath: {}
+                      f:name: {}
+                    k:{"mountPath":"/yatai"}:
+                      .: {}
+                      f:mountPath: {}
+                      f:name: {}
+              f:dnsPolicy: {}
+              f:initContainers:
+                .: {}
+                k:{"name":"bento-downloader"}:
+                  .: {}
+                  f:command: {}
+                  f:env:
+                    .: {}
+                    k:{"name":"AWS_EC2_METADATA_DISABLED"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                  f:envFrom: {}
+                  f:image: {}
+                  f:imagePullPolicy: {}
+                  f:name: {}
+                  f:resources:
+                    .: {}
+                    f:limits:
+                      .: {}
+                      f:cpu: {}
+                      f:memory: {}
+                    f:requests:
+                      .: {}
+                      f:cpu: {}
+                      f:memory: {}
+                  f:terminationMessagePath: {}
+                  f:terminationMessagePolicy: {}
+                  f:volumeMounts:
+                    .: {}
+                    k:{"mountPath":"/workspace"}:
+                      .: {}
+                      f:mountPath: {}
+                      f:name: {}
+                    k:{"mountPath":"/yatai"}:
+                      .: {}
+                      f:mountPath: {}
+                      f:name: {}
+                k:{"name":"model-downloader-0"}:
+                  .: {}
+                  f:command: {}
+                  f:env:
+                    .: {}
+                    k:{"name":"AWS_EC2_METADATA_DISABLED"}:
+                      .: {}
+                      f:name: {}
+                      f:value: {}
+                  f:envFrom: {}
+                  f:image: {}
+                  f:imagePullPolicy: {}
+                  f:name: {}
+                  f:resources:
+                    .: {}
+                    f:limits:
+                      .: {}
+                      f:cpu: {}
+                      f:memory: {}
+                    f:requests:
+                      .: {}
+                      f:cpu: {}
+                      f:memory: {}
+                  f:terminationMessagePath: {}
+                  f:terminationMessagePolicy: {}
+                  f:volumeMounts:
+                    .: {}
+                    k:{"mountPath":"/workspace"}:
+                      .: {}
+                      f:mountPath: {}
+                      f:name: {}
+                    k:{"mountPath":"/yatai"}:
+                      .: {}
+                      f:mountPath: {}
+                      f:name: {}
+              f:restartPolicy: {}
+              f:schedulerName: {}
+              f:securityContext: {}
+              f:serviceAccount: {}
+              f:serviceAccountName: {}
+              f:terminationGracePeriodSeconds: {}
+              f:volumes:
+                .: {}
+                k:{"name":"workspace"}:
+                  .: {}
+                  f:emptyDir: {}
+                  f:name: {}
+                k:{"name":"yatai"}:
+                  .: {}
+                  f:emptyDir: {}
+                  f:name: {}
+    - manager: kube-controller-manager
+      operation: Update
+      apiVersion: batch/v1
+      time: '2024-02-22T07:38:35Z'
+      fieldsType: FieldsV1
+      fieldsV1:
+        f:status:
+          f:completionTime: {}
+          f:conditions: {}
+          f:ready: {}
+          f:startTime: {}
+          f:succeeded: {}
+          f:uncountedTerminatedPods: {}
+      subresource: status
+  selfLink: >-
+    /apis/batch/v1/namespaces/yatai/jobs/yatai-bento-image-builder-cnbfhas7sicck78hame0
+status:
+  conditions:
+    - type: Complete
+      status: 'True'
+      lastProbeTime: '2024-02-22T07:38:35Z'
+      lastTransitionTime: '2024-02-22T07:38:35Z'
+  startTime: '2024-02-22T07:32:59Z'
+  completionTime: '2024-02-22T07:38:35Z'
+  succeeded: 1
+  uncountedTerminatedPods: {}
+  ready: 0
+spec:
+  parallelism: 1
+  completions: 1
+  podFailurePolicy:
+    rules:
+      - action: FailJob
+        onExitCodes:
+          containerName: builder
+          operator: In
+          values:
+            - 42
+        onPodConditions: null
+  backoffLimit: 6
+  selector:
+    matchLabels:
+      batch.kubernetes.io/controller-uid: c24a4a1f-30ad-4614-9f14-734bf34590e3
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        batch.kubernetes.io/controller-uid: c24a4a1f-30ad-4614-9f14-734bf34590e3
+        batch.kubernetes.io/job-name: yatai-bento-image-builder-cnbfhas7sicck78hame0
+        controller-uid: c24a4a1f-30ad-4614-9f14-734bf34590e3
+        job-name: yatai-bento-image-builder-cnbfhas7sicck78hame0
+        yatai.ai/bento: 6zhvoagqskfhrtvf
+        yatai.ai/bento-repository: doc_classifier
+        yatai.ai/bento-request: doc-classifier--6-zhvoagqskfhrtvf
+        yatai.ai/is-bento-image-builder: 'true'
+    spec:
+      volumes:
+        - name: yatai
+          emptyDir: {}
+        - name: workspace
+          emptyDir: {}
+      initContainers:
+        - name: bento-downloader
+          image: quay.io/bentoml/bento-downloader:0.0.1
+          command:
+            - bash
+            - '-c'
+            - "\nset -e\n\nmkdir -p /workspace/buildcontext\nurl=\"http://yatai.yatai-system.svc.cluster.local/api/v1/bento_repositories/doc_classifier/bentos/6zhvoagqskfhrtvf/download\"\necho \"Downloading bento doc_classifier:6zhvoagqskfhrtvf tar file from ${url} to /tmp/downloaded.tar...\"\nif [[ ${url} == s3://* ]]; then\n\techo \"Downloading from s3...\"\n\taws s3 cp ${url} /tmp/downloaded.tar\nelse\n\tcurl --fail -L -H \"X-YATAI-API-TOKEN: yatai-image-builder:default:$YATAI_API_TOKEN\" ${url} --output /tmp/downloaded.tar --progress-bar\nfi\ncd /workspace/buildcontext\necho \"Extracting bento tar file...\"\ntar -xvf /tmp/downloaded.tar\necho \"Removing bento tar file...\"\nrm /tmp/downloaded.tar\n\necho \"Done\"\n\t"
+          envFrom:
+            - secretRef:
+                name: yatai-api-token
+          env:
+            - name: AWS_EC2_METADATA_DISABLED
+              value: 'true'
+          resources:
+            limits:
+              cpu: '1'
+              memory: 3000Mi
+            requests:
+              cpu: 100m
+              memory: 1000Mi
+          volumeMounts:
+            - name: yatai
+              mountPath: /yatai
+            - name: workspace
+              mountPath: /workspace
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+          imagePullPolicy: IfNotPresent
+        - name: model-downloader-0
+          image: quay.io/bentoml/bento-downloader:0.0.1
+          command:
+            - bash
+            - '-c'
+            - "\nset -e\n\nmkdir -p /workspace/buildcontext/models/twenty_news_group/4o7badwqskg25tvf\nurl=\"http://yatai.yatai-system.svc.cluster.local/api/v1/model_repositories/twenty_news_group/models/4o7badwqskg25tvf/download\"\necho \"Downloading model twenty_news_group:4o7badwqskg25tvf tar file from ${url} to /tmp/downloaded.tar...\"\nif [[ ${url} == s3://* ]]; then\n\techo \"Downloading from s3...\"\n\taws s3 cp ${url} /tmp/downloaded.tar\nelse\n\tcurl --fail -L -H \"X-YATAI-API-TOKEN: yatai-image-builder:default:$YATAI_API_TOKEN\" ${url} --output /tmp/downloaded.tar --progress-bar\nfi\ncd /workspace/buildcontext/models/twenty_news_group/4o7badwqskg25tvf\necho \"Extracting model tar file...\"\ntar -xvf /tmp/downloaded.tar\necho -n '4o7badwqskg25tvf' > /workspace/buildcontext/models/twenty_news_group/latest\necho \"Removing model tar file...\"\nrm /tmp/downloaded.tar\n\necho \"Done\"\n"
+          envFrom:
+            - secretRef:
+                name: yatai-api-token
+          env:
+            - name: AWS_EC2_METADATA_DISABLED
+              value: 'true'
+          resources:
+            limits:
+              cpu: '1'
+              memory: 3000Mi
+            requests:
+              cpu: 100m
+              memory: 1000Mi
+          volumeMounts:
+            - name: yatai
+              mountPath: /yatai
+            - name: workspace
+              mountPath: /workspace
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+          imagePullPolicy: IfNotPresent
+      containers:
+        - name: builder
+          image: quay.io/bentoml/kaniko:debug
+          command:
+            - sh
+          args:
+            - '-c'
+            - >-
+              /kaniko/executor --context=/workspace/buildcontext
+              --verbosity=info --cache=true --compressed-caching=false
+              --dockerfile=/workspace/buildcontext/env/docker/Dockerfile
+              --insecure=true
+              --destination=docker-registry.yatai-image-builder.svc.cluster.local:5000/yatai-bentos:yatai.doc_classifier.6zhvoagqskfhrtvf
+              && exit 0 || exit 42
+          env:
+            - name: DOCKER_CONFIG
+              value: /kaniko/.docker/
+            - name: IFS
+              value: ''''''
+          resources: {}
+          volumeMounts:
+            - name: yatai
+              mountPath: /yatai
+            - name: workspace
+              mountPath: /workspace
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+          imagePullPolicy: Always
+          stdin: true
+          tty: true
+      restartPolicy: Never
+      terminationGracePeriodSeconds: 30
+      dnsPolicy: ClusterFirst
+      serviceAccountName: default
+      serviceAccount: default
+      securityContext: {}
+      schedulerName: default-scheduler
+  completionMode: NonIndexed
+  suspend: false

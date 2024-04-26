@@ -1,0 +1,1279 @@
+// {
+//     "total": 1,
+//     "start": 0,
+//     "count": 10,
+//     "items": [
+//         {
+//             "uid": "65d55bb2a5bc71e406a170b47",
+//             "created_at": "2024-02-21T02:10:58.398128Z",
+//             "updated_at": "2024-02-21T06:47:28.324067Z",
+//             "deleted_at": null,
+//             "name": "iris-test-john",
+//             "resource_type": "deployment",
+//             "labels": [],
+//             "creator": {
+//                 "uid": "65a0ec5f868e104c4e1030d11",
+//                 "created_at": "2024-01-12T07:38:07.180496Z",
+//                 "updated_at": "2024-01-15T02:49:09.650689Z",
+//                 "deleted_at": null,
+//                 "name": "admin",
+//                 "resource_type": "user",
+//                 "labels": [],
+//                 "first_name": "",
+//                 "last_name": "",
+//                 "email": "765961515@qq.com",
+//                 "avatar_url": "https://en.gravatar.com/avatar/14ae79eaaadb9242f5a6bfb1d0f98dc2?d=robohash\u0026s=300",
+//                 "is_super_admin": true
+//             },
+//             "cluster": {
+//                 "uid": "65a0ec5ffb2c1a4c4ea218784",
+//                 "created_at": "2024-01-12T07:38:07.207423Z",
+//                 "updated_at": "2024-01-12T07:38:07.207423Z",
+//                 "deleted_at": null,
+//                 "name": "default",
+//                 "resource_type": "cluster",
+//                 "labels": [],
+//                 "creator": {
+//                     "uid": "65a0ec5f868e104c4e1030d11",
+//                     "created_at": "2024-01-12T07:38:07.180496Z",
+//                     "updated_at": "2024-01-15T02:49:09.650689Z",
+//                     "deleted_at": null,
+//                     "name": "admin",
+//                     "resource_type": "user",
+//                     "labels": [],
+//                     "first_name": "",
+//                     "last_name": "",
+//                     "email": "765961515@qq.com",
+//                     "avatar_url": "https://en.gravatar.com/avatar/14ae79eaaadb9242f5a6bfb1d0f98dc2?d=robohash\u0026s=300",
+//                     "is_super_admin": true
+//                 },
+//                 "description": "",
+//                 "organization": {
+//                     "uid": "65a0ec5ffd26294c4e9d6f822",
+//                     "created_at": "2024-01-12T07:38:07.189303Z",
+//                     "updated_at": "2024-01-12T07:38:07.189303Z",
+//                     "deleted_at": null,
+//                     "name": "default",
+//                     "resource_type": "organization",
+//                     "labels": [],
+//                     "creator": {
+//                         "uid": "65a0ec5f868e104c4e1030d11",
+//                         "created_at": "2024-01-12T07:38:07.180496Z",
+//                         "updated_at": "2024-01-15T02:49:09.650689Z",
+//                         "deleted_at": null,
+//                         "name": "admin",
+//                         "resource_type": "user",
+//                         "labels": [],
+//                         "first_name": "",
+//                         "last_name": "",
+//                         "email": "765961515@qq.com",
+//                         "avatar_url": "https://en.gravatar.com/avatar/14ae79eaaadb9242f5a6bfb1d0f98dc2?d=robohash\u0026s=300",
+//                         "is_super_admin": true
+//                     },
+//                     "description": ""
+//                 },
+//                 "kube_config": "",
+//                 "config": null,
+//                 "grafana_root_path": "/api/v1/clusters/default/grafana/"
+//             },
+//             "status": "deploying",
+//             "urls": [],
+//             "latest_revision": {
+//                 "uid": "65d59c7f9caeb34c4ef7105d2",
+//                 "created_at": "2024-02-21T06:47:27.724392Z",
+//                 "updated_at": "2024-02-21T06:47:27.724392Z",
+//                 "deleted_at": null,
+//                 "name": "65d59c7f9caeb34c4ef7105d2",
+//                 "resource_type": "deployment_revision",
+//                 "labels": [],
+//                 "creator": {
+//                     "uid": "65a0ec5f868e104c4e1030d11",
+//                     "created_at": "2024-01-12T07:38:07.180496Z",
+//                     "updated_at": "2024-01-15T02:49:09.650689Z",
+//                     "deleted_at": null,
+//                     "name": "admin",
+//                     "resource_type": "user",
+//                     "labels": [],
+//                     "first_name": "",
+//                     "last_name": "",
+//                     "email": "765961515@qq.com",
+//                     "avatar_url": "https://en.gravatar.com/avatar/14ae79eaaadb9242f5a6bfb1d0f98dc2?d=robohash\u0026s=300",
+//                     "is_super_admin": true
+//                 },
+//                 "status": "active",
+//                 "targets": [
+//                     {
+//                         "uid": "65d59c7f6667464c4e3597e43",
+//                         "created_at": "2024-02-21T06:47:27.728222Z",
+//                         "updated_at": "2024-02-21T06:47:27.728222Z",
+//                         "deleted_at": null,
+//                         "name": "65d59c7f6667464c4e3597e43",
+//                         "resource_type": "deployment_revision",
+//                         "labels": [],
+//                         "type": "stable",
+//                         "creator": {
+//                             "uid": "65a0ec5f868e104c4e1030d11",
+//                             "created_at": "2024-01-12T07:38:07.180496Z",
+//                             "updated_at": "2024-01-15T02:49:09.650689Z",
+//                             "deleted_at": null,
+//                             "name": "admin",
+//                             "resource_type": "user",
+//                             "labels": [],
+//                             "first_name": "",
+//                             "last_name": "",
+//                             "email": "765961515@qq.com",
+//                             "avatar_url": "https://en.gravatar.com/avatar/14ae79eaaadb9242f5a6bfb1d0f98dc2?d=robohash\u0026s=300",
+//                             "is_super_admin": true
+//                         },
+//                         "bento": {
+//                             "uid": "65aa1df5b07088265952659a8",
+//                             "created_at": "2024-01-19T07:00:05.891524Z",
+//                             "updated_at": "2024-01-19T07:00:06.011464Z",
+//                             "deleted_at": null,
+//                             "name": "e57ak2fwtcysvnaf",
+//                             "resource_type": "bento",
+//                             "labels": [
+//                                 {
+//                                     "key": "project",
+//                                     "value": "gallery"
+//                                 },
+//                                 {
+//                                     "key": "owner",
+//                                     "value": "bentoml-team"
+//                                 }
+//                             ],
+//                             "bento_repository_uid": "65a7266e73ac5d10d83b0e9f3",
+//                             "creator": {
+//                                 "uid": "65a0ec5f868e104c4e1030d11",
+//                                 "created_at": "2024-01-12T07:38:07.180496Z",
+//                                 "updated_at": "2024-01-15T02:49:09.650689Z",
+//                                 "deleted_at": null,
+//                                 "name": "admin",
+//                                 "resource_type": "user",
+//                                 "labels": [],
+//                                 "first_name": "",
+//                                 "last_name": "",
+//                                 "email": "765961515@qq.com",
+//                                 "avatar_url": "https://en.gravatar.com/avatar/14ae79eaaadb9242f5a6bfb1d0f98dc2?d=robohash\u0026s=300",
+//                                 "is_super_admin": true
+//                             },
+//                             "version": "e57ak2fwtcysvnaf",
+//                             "description": "",
+//                             "image_build_status": "pending",
+//                             "upload_status": "success",
+//                             "upload_started_at": "2024-01-19T07:00:06.010855Z",
+//                             "upload_finished_at": null,
+//                             "upload_finished_reason": "",
+//                             "presigned_upload_url": "",
+//                             "presigned_download_url": "",
+//                             "presigned_urls_deprecated": false,
+//                             "transmission_strategy": "proxy",
+//                             "upload_id": "",
+//                             "manifest": {
+//                                 "service": "service:svc",
+//                                 "bentoml_version": "1.1.11",
+//                                 "apis": {},
+//                                 "models": [
+//                                     "iris_clf:cqtbqf5wtcnzrnaf"
+//                                 ],
+//                                 "runners": [
+//                                     {
+//                                         "name": "iris_clf",
+//                                         "runnable_type": "SklearnRunnable",
+//                                         "models": [
+//                                             "iris_clf:cqtbqf5wtcnzrnaf"
+//                                         ],
+//                                         "resource_config": null
+//                                     }
+//                                 ],
+//                                 "size_bytes": 21822
+//                             },
+//                             "build_at": "2024-01-19T06:58:41.141168Z",
+//                             "repository": {
+//                                 "uid": "65a7266e73ac5d10d83b0e9f3",
+//                                 "created_at": "2024-01-17T00:59:26.682064Z",
+//                                 "updated_at": "2024-01-17T00:59:26.682064Z",
+//                                 "deleted_at": null,
+//                                 "name": "iris_classifier",
+//                                 "resource_type": "bento_repository",
+//                                 "labels": [],
+//                                 "creator": {
+//                                     "uid": "65a0ec5f868e104c4e1030d11",
+//                                     "created_at": "2024-01-12T07:38:07.180496Z",
+//                                     "updated_at": "2024-01-15T02:49:09.650689Z",
+//                                     "deleted_at": null,
+//                                     "name": "admin",
+//                                     "resource_type": "user",
+//                                     "labels": [],
+//                                     "first_name": "",
+//                                     "last_name": "",
+//                                     "email": "765961515@qq.com",
+//                                     "avatar_url": "https://en.gravatar.com/avatar/14ae79eaaadb9242f5a6bfb1d0f98dc2?d=robohash\u0026s=300",
+//                                     "is_super_admin": true
+//                                 },
+//                                 "organization": {
+//                                     "uid": "65a0ec5ffd26294c4e9d6f822",
+//                                     "created_at": "2024-01-12T07:38:07.189303Z",
+//                                     "updated_at": "2024-01-12T07:38:07.189303Z",
+//                                     "deleted_at": null,
+//                                     "name": "default",
+//                                     "resource_type": "organization",
+//                                     "labels": [],
+//                                     "creator": {
+//                                         "uid": "65a0ec5f868e104c4e1030d11",
+//                                         "created_at": "2024-01-12T07:38:07.180496Z",
+//                                         "updated_at": "2024-01-15T02:49:09.650689Z",
+//                                         "deleted_at": null,
+//                                         "name": "admin",
+//                                         "resource_type": "user",
+//                                         "labels": [],
+//                                         "first_name": "",
+//                                         "last_name": "",
+//                                         "email": "765961515@qq.com",
+//                                         "avatar_url": "https://en.gravatar.com/avatar/14ae79eaaadb9242f5a6bfb1d0f98dc2?d=robohash\u0026s=300",
+//                                         "is_super_admin": true
+//                                     },
+//                                     "description": ""
+//                                 },
+//                                 "latest_bento": {
+//                                     "uid": "65aa1df5b07088265952659a8",
+//                                     "created_at": "2024-01-19T07:00:05.891524Z",
+//                                     "updated_at": "2024-01-19T07:00:06.011464Z",
+//                                     "deleted_at": null,
+//                                     "name": "e57ak2fwtcysvnaf",
+//                                     "resource_type": "bento",
+//                                     "labels": [
+//                                         {
+//                                             "key": "project",
+//                                             "value": "gallery"
+//                                         },
+//                                         {
+//                                             "key": "owner",
+//                                             "value": "bentoml-team"
+//                                         }
+//                                     ],
+//                                     "bento_repository_uid": "65a7266e73ac5d10d83b0e9f3",
+//                                     "creator": {
+//                                         "uid": "65a0ec5f868e104c4e1030d11",
+//                                         "created_at": "2024-01-12T07:38:07.180496Z",
+//                                         "updated_at": "2024-01-15T02:49:09.650689Z",
+//                                         "deleted_at": null,
+//                                         "name": "admin",
+//                                         "resource_type": "user",
+//                                         "labels": [],
+//                                         "first_name": "",
+//                                         "last_name": "",
+//                                         "email": "765961515@qq.com",
+//                                         "avatar_url": "https://en.gravatar.com/avatar/14ae79eaaadb9242f5a6bfb1d0f98dc2?d=robohash\u0026s=300",
+//                                         "is_super_admin": true
+//                                     },
+//                                     "version": "e57ak2fwtcysvnaf",
+//                                     "description": "",
+//                                     "image_build_status": "pending",
+//                                     "upload_status": "success",
+//                                     "upload_started_at": "2024-01-19T07:00:06.010855Z",
+//                                     "upload_finished_at": null,
+//                                     "upload_finished_reason": "",
+//                                     "presigned_upload_url": "",
+//                                     "presigned_download_url": "",
+//                                     "presigned_urls_deprecated": false,
+//                                     "transmission_strategy": "proxy",
+//                                     "upload_id": "",
+//                                     "manifest": {
+//                                         "service": "service:svc",
+//                                         "bentoml_version": "1.1.11",
+//                                         "apis": {},
+//                                         "models": [
+//                                             "iris_clf:cqtbqf5wtcnzrnaf"
+//                                         ],
+//                                         "runners": [
+//                                             {
+//                                                 "name": "iris_clf",
+//                                                 "runnable_type": "SklearnRunnable",
+//                                                 "models": [
+//                                                     "iris_clf:cqtbqf5wtcnzrnaf"
+//                                                 ],
+//                                                 "resource_config": null
+//                                             }
+//                                         ],
+//                                         "size_bytes": 21822
+//                                     },
+//                                     "build_at": "2024-01-19T06:58:41.141168Z"
+//                                 },
+//                                 "n_bentos": 2,
+//                                 "n_deployments": 0,
+//                                 "latest_bentos": [
+//                                     {
+//                                         "uid": "65aa1df5b07088265952659a8",
+//                                         "created_at": "2024-01-19T07:00:05.891524Z",
+//                                         "updated_at": "2024-01-19T07:00:06.011464Z",
+//                                         "deleted_at": null,
+//                                         "name": "e57ak2fwtcysvnaf",
+//                                         "resource_type": "bento",
+//                                         "labels": [
+//                                             {
+//                                                 "key": "project",
+//                                                 "value": "gallery"
+//                                             },
+//                                             {
+//                                                 "key": "owner",
+//                                                 "value": "bentoml-team"
+//                                             }
+//                                         ],
+//                                         "bento_repository_uid": "65a7266e73ac5d10d83b0e9f3",
+//                                         "creator": {
+//                                             "uid": "65a0ec5f868e104c4e1030d11",
+//                                             "created_at": "2024-01-12T07:38:07.180496Z",
+//                                             "updated_at": "2024-01-15T02:49:09.650689Z",
+//                                             "deleted_at": null,
+//                                             "name": "admin",
+//                                             "resource_type": "user",
+//                                             "labels": [],
+//                                             "first_name": "",
+//                                             "last_name": "",
+//                                             "email": "765961515@qq.com",
+//                                             "avatar_url": "https://en.gravatar.com/avatar/14ae79eaaadb9242f5a6bfb1d0f98dc2?d=robohash\u0026s=300",
+//                                             "is_super_admin": true
+//                                         },
+//                                         "version": "e57ak2fwtcysvnaf",
+//                                         "description": "",
+//                                         "image_build_status": "pending",
+//                                         "upload_status": "success",
+//                                         "upload_started_at": "2024-01-19T07:00:06.010855Z",
+//                                         "upload_finished_at": null,
+//                                         "upload_finished_reason": "",
+//                                         "presigned_upload_url": "",
+//                                         "presigned_download_url": "",
+//                                         "presigned_urls_deprecated": false,
+//                                         "transmission_strategy": "proxy",
+//                                         "upload_id": "",
+//                                         "manifest": {
+//                                             "service": "service:svc",
+//                                             "bentoml_version": "1.1.11",
+//                                             "apis": {},
+//                                             "models": [
+//                                                 "iris_clf:cqtbqf5wtcnzrnaf"
+//                                             ],
+//                                             "runners": [
+//                                                 {
+//                                                     "name": "iris_clf",
+//                                                     "runnable_type": "SklearnRunnable",
+//                                                     "models": [
+//                                                         "iris_clf:cqtbqf5wtcnzrnaf"
+//                                                     ],
+//                                                     "resource_config": null
+//                                                 }
+//                                             ],
+//                                             "size_bytes": 21822
+//                                         },
+//                                         "build_at": "2024-01-19T06:58:41.141168Z"
+//                                     },
+//                                     {
+//                                         "uid": "65a7266eac53df10d81f3afc4",
+//                                         "created_at": "2024-01-17T00:59:26.746261Z",
+//                                         "updated_at": "2024-01-17T00:59:26.87085Z",
+//                                         "deleted_at": null,
+//                                         "name": "ljst3b5tqoggtnaf",
+//                                         "resource_type": "bento",
+//                                         "labels": [
+//                                             {
+//                                                 "key": "project",
+//                                                 "value": "gallery"
+//                                             },
+//                                             {
+//                                                 "key": "owner",
+//                                                 "value": "bentoml-team"
+//                                             }
+//                                         ],
+//                                         "bento_repository_uid": "65a7266e73ac5d10d83b0e9f3",
+//                                         "creator": {
+//                                             "uid": "65a0ec5f868e104c4e1030d11",
+//                                             "created_at": "2024-01-12T07:38:07.180496Z",
+//                                             "updated_at": "2024-01-15T02:49:09.650689Z",
+//                                             "deleted_at": null,
+//                                             "name": "admin",
+//                                             "resource_type": "user",
+//                                             "labels": [],
+//                                             "first_name": "",
+//                                             "last_name": "",
+//                                             "email": "765961515@qq.com",
+//                                             "avatar_url": "https://en.gravatar.com/avatar/14ae79eaaadb9242f5a6bfb1d0f98dc2?d=robohash\u0026s=300",
+//                                             "is_super_admin": true
+//                                         },
+//                                         "version": "ljst3b5tqoggtnaf",
+//                                         "description": "",
+//                                         "image_build_status": "pending",
+//                                         "upload_status": "success",
+//                                         "upload_started_at": "2024-01-17T00:59:26.870266Z",
+//                                         "upload_finished_at": null,
+//                                         "upload_finished_reason": "",
+//                                         "presigned_upload_url": "",
+//                                         "presigned_download_url": "",
+//                                         "presigned_urls_deprecated": false,
+//                                         "transmission_strategy": "proxy",
+//                                         "upload_id": "",
+//                                         "manifest": {
+//                                             "service": "service:svc",
+//                                             "bentoml_version": "1.1.11",
+//                                             "apis": {},
+//                                             "models": [
+//                                                 "iris_clf:yperslvtqguitnaf"
+//                                             ],
+//                                             "runners": [
+//                                                 {
+//                                                     "name": "iris_clf",
+//                                                     "runnable_type": "SklearnRunnable",
+//                                                     "models": [
+//                                                         "iris_clf:yperslvtqguitnaf"
+//                                                     ],
+//                                                     "resource_config": null
+//                                                 }
+//                                             ],
+//                                             "size_bytes": 25443
+//                                         },
+//                                         "build_at": "2024-01-15T08:53:13.861328Z"
+//                                     }
+//                                 ],
+//                                 "description": ""
+//                             },
+//                             "models": [
+//                                 {
+//                                     "uid": "65aa1df5f2ce891f7143b3196",
+//                                     "created_at": "2024-01-19T07:00:05.697491Z",
+//                                     "updated_at": "2024-01-19T07:00:05.786489Z",
+//                                     "deleted_at": null,
+//                                     "name": "cqtbqf5wtcnzrnaf",
+//                                     "resource_type": "model",
+//                                     "labels": [],
+//                                     "model_uid": "65a4f875c8a1db1f7161597e7",
+//                                     "creator": {
+//                                         "uid": "65a0ec5f868e104c4e1030d11",
+//                                         "created_at": "2024-01-12T07:38:07.180496Z",
+//                                         "updated_at": "2024-01-15T02:49:09.650689Z",
+//                                         "deleted_at": null,
+//                                         "name": "admin",
+//                                         "resource_type": "user",
+//                                         "labels": [],
+//                                         "first_name": "",
+//                                         "last_name": "",
+//                                         "email": "765961515@qq.com",
+//                                         "avatar_url": "https://en.gravatar.com/avatar/14ae79eaaadb9242f5a6bfb1d0f98dc2?d=robohash\u0026s=300",
+//                                         "is_super_admin": true
+//                                     },
+//                                     "version": "cqtbqf5wtcnzrnaf",
+//                                     "description": "",
+//                                     "image_build_status": "pending",
+//                                     "upload_status": "success",
+//                                     "upload_started_at": "2024-01-19T07:00:05.785802Z",
+//                                     "upload_finished_at": null,
+//                                     "upload_finished_reason": "",
+//                                     "presigned_upload_url": "",
+//                                     "presigned_download_url": "",
+//                                     "presigned_urls_deprecated": false,
+//                                     "transmission_strategy": "proxy",
+//                                     "upload_id": "",
+//                                     "manifest": {
+//                                         "bentoml_version": "1.1.11",
+//                                         "api_version": "v1",
+//                                         "module": "bentoml.sklearn",
+//                                         "metadata": {},
+//                                         "context": {
+//                                             "bentoml_version": "1.1.11",
+//                                             "framework_name": "sklearn",
+//                                             "framework_versions": {
+//                                                 "scikit-learn": "1.3.2"
+//                                             },
+//                                             "python_version": "3.9.7"
+//                                         },
+//                                         "options": {},
+//                                         "size_bytes": 6121
+//                                     },
+//                                     "build_at": "2024-01-19T06:57:58.453371Z",
+//                                     "repository": {
+//                                         "uid": "65a4f875c8a1db1f7161597e7",
+//                                         "created_at": "2024-01-15T09:18:45.729601Z",
+//                                         "updated_at": "2024-01-15T09:18:45.729601Z",
+//                                         "deleted_at": null,
+//                                         "name": "iris_clf",
+//                                         "resource_type": "model_repository",
+//                                         "labels": [],
+//                                         "creator": {
+//                                             "uid": "65a0ec5f868e104c4e1030d11",
+//                                             "created_at": "2024-01-12T07:38:07.180496Z",
+//                                             "updated_at": "2024-01-15T02:49:09.650689Z",
+//                                             "deleted_at": null,
+//                                             "name": "admin",
+//                                             "resource_type": "user",
+//                                             "labels": [],
+//                                             "first_name": "",
+//                                             "last_name": "",
+//                                             "email": "765961515@qq.com",
+//                                             "avatar_url": "https://en.gravatar.com/avatar/14ae79eaaadb9242f5a6bfb1d0f98dc2?d=robohash\u0026s=300",
+//                                             "is_super_admin": true
+//                                         },
+//                                         "organization": {
+//                                             "uid": "65a0ec5ffd26294c4e9d6f822",
+//                                             "created_at": "2024-01-12T07:38:07.189303Z",
+//                                             "updated_at": "2024-01-12T07:38:07.189303Z",
+//                                             "deleted_at": null,
+//                                             "name": "default",
+//                                             "resource_type": "organization",
+//                                             "labels": [],
+//                                             "creator": {
+//                                                 "uid": "65a0ec5f868e104c4e1030d11",
+//                                                 "created_at": "2024-01-12T07:38:07.180496Z",
+//                                                 "updated_at": "2024-01-15T02:49:09.650689Z",
+//                                                 "deleted_at": null,
+//                                                 "name": "admin",
+//                                                 "resource_type": "user",
+//                                                 "labels": [],
+//                                                 "first_name": "",
+//                                                 "last_name": "",
+//                                                 "email": "765961515@qq.com",
+//                                                 "avatar_url": "https://en.gravatar.com/avatar/14ae79eaaadb9242f5a6bfb1d0f98dc2?d=robohash\u0026s=300",
+//                                                 "is_super_admin": true
+//                                             },
+//                                             "description": ""
+//                                         },
+//                                         "latest_model": {
+//                                             "uid": "65aa1df5f2ce891f7143b3196",
+//                                             "created_at": "2024-01-19T07:00:05.697491Z",
+//                                             "updated_at": "2024-01-19T07:00:05.786489Z",
+//                                             "deleted_at": null,
+//                                             "name": "cqtbqf5wtcnzrnaf",
+//                                             "resource_type": "model",
+//                                             "labels": [],
+//                                             "model_uid": "65a4f875c8a1db1f7161597e7",
+//                                             "creator": {
+//                                                 "uid": "65a0ec5f868e104c4e1030d11",
+//                                                 "created_at": "2024-01-12T07:38:07.180496Z",
+//                                                 "updated_at": "2024-01-15T02:49:09.650689Z",
+//                                                 "deleted_at": null,
+//                                                 "name": "admin",
+//                                                 "resource_type": "user",
+//                                                 "labels": [],
+//                                                 "first_name": "",
+//                                                 "last_name": "",
+//                                                 "email": "765961515@qq.com",
+//                                                 "avatar_url": "https://en.gravatar.com/avatar/14ae79eaaadb9242f5a6bfb1d0f98dc2?d=robohash\u0026s=300",
+//                                                 "is_super_admin": true
+//                                             },
+//                                             "version": "cqtbqf5wtcnzrnaf",
+//                                             "description": "",
+//                                             "image_build_status": "pending",
+//                                             "upload_status": "success",
+//                                             "upload_started_at": "2024-01-19T07:00:05.785802Z",
+//                                             "upload_finished_at": null,
+//                                             "upload_finished_reason": "",
+//                                             "presigned_upload_url": "",
+//                                             "presigned_download_url": "",
+//                                             "presigned_urls_deprecated": false,
+//                                             "transmission_strategy": "proxy",
+//                                             "upload_id": "",
+//                                             "manifest": {
+//                                                 "bentoml_version": "1.1.11",
+//                                                 "api_version": "v1",
+//                                                 "module": "bentoml.sklearn",
+//                                                 "metadata": {},
+//                                                 "context": {
+//                                                     "bentoml_version": "1.1.11",
+//                                                     "framework_name": "sklearn",
+//                                                     "framework_versions": {
+//                                                         "scikit-learn": "1.3.2"
+//                                                     },
+//                                                     "python_version": "3.9.7"
+//                                                 },
+//                                                 "options": {},
+//                                                 "size_bytes": 6121
+//                                             },
+//                                             "build_at": "2024-01-19T06:57:58.453371Z"
+//                                         },
+//                                         "description": ""
+//                                     }
+//                                 }
+//                             ]
+//                         },
+//                         "canary_rules": null,
+//                         "config": {
+//                             "kubeResourceUid": "",
+//                             "kubeResourceVersion": "",
+//                             "resources": {
+//                                 "requests": {
+//                                     "cpu": "500m",
+//                                     "memory": "500Mi"
+//                                 },
+//                                 "limits": {
+//                                     "cpu": "1000m",
+//                                     "memory": "1024Mi"
+//                                 }
+//                             },
+//                             "hpa_conf": {
+//                                 "min_replicas": 2,
+//                                 "max_replicas": 10
+//                             },
+//                             "envs": [],
+//                             "runners": {
+//                                 "iris_clf": {
+//                                     "resources": {
+//                                         "requests": {
+//                                             "cpu": "500m",
+//                                             "memory": "500Mi"
+//                                         },
+//                                         "limits": {
+//                                             "cpu": "1000m",
+//                                             "memory": "1024Mi"
+//                                         }
+//                                     },
+//                                     "hpa_conf": {
+//                                         "min_replicas": 2,
+//                                         "max_replicas": 10
+//                                     },
+//                                     "envs": [],
+//                                     "deployment_strategy": "RollingUpdate"
+//                                 }
+//                             },
+//                             "enable_ingress": true,
+//                             "deployment_strategy": "RollingUpdate"
+//                         }
+//                     }
+//                 ]
+//             },
+//             "kube_namespace": "yatai"
+//         }
+//     ]
+// }
+
+
+// {
+//     "total": 1,
+//     "start": 0,
+//     "count": 10,
+//     "items": [
+//         {
+//             "uid": "65d47a327910641bfcf81ed34",
+//             "created_at": "2024-02-20T10:08:50.239282Z",
+//             "updated_at": "2024-02-21T06:48:35.027837Z",
+//             "deleted_at": null,
+//             "name": "john-test-2",
+//             "resource_type": "deployment",
+//             "labels": [],
+//             "creator": {
+//                 "uid": "65a0ec5f868e104c4e1030d11",
+//                 "created_at": "2024-01-12T07:38:07.180496Z",
+//                 "updated_at": "2024-01-15T02:49:09.650689Z",
+//                 "deleted_at": null,
+//                 "name": "admin",
+//                 "resource_type": "user",
+//                 "labels": [],
+//                 "first_name": "",
+//                 "last_name": "",
+//                 "email": "765961515@qq.com",
+//                 "avatar_url": "https://en.gravatar.com/avatar/14ae79eaaadb9242f5a6bfb1d0f98dc2?d=robohash\u0026s=300",
+//                 "is_super_admin": true
+//             },
+//             "cluster": {
+//                 "uid": "65a0ec5ffb2c1a4c4ea218784",
+//                 "created_at": "2024-01-12T07:38:07.207423Z",
+//                 "updated_at": "2024-01-12T07:38:07.207423Z",
+//                 "deleted_at": null,
+//                 "name": "default",
+//                 "resource_type": "cluster",
+//                 "labels": [],
+//                 "creator": {
+//                     "uid": "65a0ec5f868e104c4e1030d11",
+//                     "created_at": "2024-01-12T07:38:07.180496Z",
+//                     "updated_at": "2024-01-15T02:49:09.650689Z",
+//                     "deleted_at": null,
+//                     "name": "admin",
+//                     "resource_type": "user",
+//                     "labels": [],
+//                     "first_name": "",
+//                     "last_name": "",
+//                     "email": "765961515@qq.com",
+//                     "avatar_url": "https://en.gravatar.com/avatar/14ae79eaaadb9242f5a6bfb1d0f98dc2?d=robohash\u0026s=300",
+//                     "is_super_admin": true
+//                 },
+//                 "description": "",
+//                 "organization": {
+//                     "uid": "65a0ec5ffd26294c4e9d6f822",
+//                     "created_at": "2024-01-12T07:38:07.189303Z",
+//                     "updated_at": "2024-01-12T07:38:07.189303Z",
+//                     "deleted_at": null,
+//                     "name": "default",
+//                     "resource_type": "organization",
+//                     "labels": [],
+//                     "creator": {
+//                         "uid": "65a0ec5f868e104c4e1030d11",
+//                         "created_at": "2024-01-12T07:38:07.180496Z",
+//                         "updated_at": "2024-01-15T02:49:09.650689Z",
+//                         "deleted_at": null,
+//                         "name": "admin",
+//                         "resource_type": "user",
+//                         "labels": [],
+//                         "first_name": "",
+//                         "last_name": "",
+//                         "email": "765961515@qq.com",
+//                         "avatar_url": "https://en.gravatar.com/avatar/14ae79eaaadb9242f5a6bfb1d0f98dc2?d=robohash\u0026s=300",
+//                         "is_super_admin": true
+//                     },
+//                     "description": ""
+//                 },
+//                 "kube_config": "",
+//                 "config": null,
+//                 "grafana_root_path": "/api/v1/clusters/default/grafana/"
+//             },
+//             "status": "failed",
+//             "urls": [],
+//             "latest_revision": {
+//                 "uid": "65d47a321207c91bfc58e7ec5",
+//                 "created_at": "2024-02-20T10:08:50.256887Z",
+//                 "updated_at": "2024-02-20T10:08:50.256887Z",
+//                 "deleted_at": null,
+//                 "name": "65d47a321207c91bfc58e7ec5",
+//                 "resource_type": "deployment_revision",
+//                 "labels": [],
+//                 "creator": {
+//                     "uid": "65a0ec5f868e104c4e1030d11",
+//                     "created_at": "2024-01-12T07:38:07.180496Z",
+//                     "updated_at": "2024-01-15T02:49:09.650689Z",
+//                     "deleted_at": null,
+//                     "name": "admin",
+//                     "resource_type": "user",
+//                     "labels": [],
+//                     "first_name": "",
+//                     "last_name": "",
+//                     "email": "765961515@qq.com",
+//                     "avatar_url": "https://en.gravatar.com/avatar/14ae79eaaadb9242f5a6bfb1d0f98dc2?d=robohash\u0026s=300",
+//                     "is_super_admin": true
+//                 },
+//                 "status": "active",
+//                 "targets": [
+//                     {
+//                         "uid": "65d47a32ecc24f1bfc79c7556",
+//                         "created_at": "2024-02-20T10:08:50.258613Z",
+//                         "updated_at": "2024-02-20T10:08:50.258613Z",
+//                         "deleted_at": null,
+//                         "name": "65d47a32ecc24f1bfc79c7556",
+//                         "resource_type": "deployment_revision",
+//                         "labels": [],
+//                         "type": "stable",
+//                         "creator": {
+//                             "uid": "65a0ec5f868e104c4e1030d11",
+//                             "created_at": "2024-01-12T07:38:07.180496Z",
+//                             "updated_at": "2024-01-15T02:49:09.650689Z",
+//                             "deleted_at": null,
+//                             "name": "admin",
+//                             "resource_type": "user",
+//                             "labels": [],
+//                             "first_name": "",
+//                             "last_name": "",
+//                             "email": "765961515@qq.com",
+//                             "avatar_url": "https://en.gravatar.com/avatar/14ae79eaaadb9242f5a6bfb1d0f98dc2?d=robohash\u0026s=300",
+//                             "is_super_admin": true
+//                         },
+//                         "bento": {
+//                             "uid": "65d4515816d63e2e436029b65",
+//                             "created_at": "2024-02-20T07:14:32.506794Z",
+//                             "updated_at": "2024-02-20T07:14:32.787671Z",
+//                             "deleted_at": null,
+//                             "name": "wbac4sgpx6i5xnaf",
+//                             "resource_type": "bento",
+//                             "labels": [],
+//                             "bento_repository_uid": "65bca3b59957723bcd6b85083",
+//                             "creator": {
+//                                 "uid": "65a0ec5f868e104c4e1030d11",
+//                                 "created_at": "2024-01-12T07:38:07.180496Z",
+//                                 "updated_at": "2024-01-15T02:49:09.650689Z",
+//                                 "deleted_at": null,
+//                                 "name": "admin",
+//                                 "resource_type": "user",
+//                                 "labels": [],
+//                                 "first_name": "",
+//                                 "last_name": "",
+//                                 "email": "765961515@qq.com",
+//                                 "avatar_url": "https://en.gravatar.com/avatar/14ae79eaaadb9242f5a6bfb1d0f98dc2?d=robohash\u0026s=300",
+//                                 "is_super_admin": true
+//                             },
+//                             "version": "wbac4sgpx6i5xnaf",
+//                             "description": "",
+//                             "image_build_status": "pending",
+//                             "upload_status": "success",
+//                             "upload_started_at": "2024-02-20T07:14:32.787103Z",
+//                             "upload_finished_at": null,
+//                             "upload_finished_reason": "",
+//                             "presigned_upload_url": "",
+//                             "presigned_download_url": "",
+//                             "presigned_urls_deprecated": false,
+//                             "transmission_strategy": "proxy",
+//                             "upload_id": "",
+//                             "manifest": {
+//                                 "service": "BentoML_server_json:svc",
+//                                 "bentoml_version": "1.1.11",
+//                                 "apis": {},
+//                                 "models": [],
+//                                 "runners": [
+//                                     {
+//                                         "name": "vision_detecter_0",
+//                                         "runnable_type": "Vision_detect_Runnable",
+//                                         "models": [],
+//                                         "resource_config": null
+//                                     },
+//                                     {
+//                                         "name": "vision_detecter_1",
+//                                         "runnable_type": "Vision_detect_Runnable",
+//                                         "models": [],
+//                                         "resource_config": null
+//                                     },
+//                                     {
+//                                         "name": "vision_detecter_2",
+//                                         "runnable_type": "Vision_detect_Runnable",
+//                                         "models": [],
+//                                         "resource_config": null
+//                                     },
+//                                     {
+//                                         "name": "vision_detecter_3",
+//                                         "runnable_type": "Vision_detect_Runnable",
+//                                         "models": [],
+//                                         "resource_config": null
+//                                     }
+//                                 ],
+//                                 "size_bytes": 1840491
+//                             },
+//                             "build_at": "2024-02-20T07:14:32.314283Z",
+//                             "repository": {
+//                                 "uid": "65bca3b59957723bcd6b85083",
+//                                 "created_at": "2024-02-02T08:11:33.900329Z",
+//                                 "updated_at": "2024-02-02T08:11:33.900329Z",
+//                                 "deleted_at": null,
+//                                 "name": "bentoml_server_json",
+//                                 "resource_type": "bento_repository",
+//                                 "labels": [],
+//                                 "creator": {
+//                                     "uid": "65a0ec5f868e104c4e1030d11",
+//                                     "created_at": "2024-01-12T07:38:07.180496Z",
+//                                     "updated_at": "2024-01-15T02:49:09.650689Z",
+//                                     "deleted_at": null,
+//                                     "name": "admin",
+//                                     "resource_type": "user",
+//                                     "labels": [],
+//                                     "first_name": "",
+//                                     "last_name": "",
+//                                     "email": "765961515@qq.com",
+//                                     "avatar_url": "https://en.gravatar.com/avatar/14ae79eaaadb9242f5a6bfb1d0f98dc2?d=robohash\u0026s=300",
+//                                     "is_super_admin": true
+//                                 },
+//                                 "organization": {
+//                                     "uid": "65a0ec5ffd26294c4e9d6f822",
+//                                     "created_at": "2024-01-12T07:38:07.189303Z",
+//                                     "updated_at": "2024-01-12T07:38:07.189303Z",
+//                                     "deleted_at": null,
+//                                     "name": "default",
+//                                     "resource_type": "organization",
+//                                     "labels": [],
+//                                     "creator": {
+//                                         "uid": "65a0ec5f868e104c4e1030d11",
+//                                         "created_at": "2024-01-12T07:38:07.180496Z",
+//                                         "updated_at": "2024-01-15T02:49:09.650689Z",
+//                                         "deleted_at": null,
+//                                         "name": "admin",
+//                                         "resource_type": "user",
+//                                         "labels": [],
+//                                         "first_name": "",
+//                                         "last_name": "",
+//                                         "email": "765961515@qq.com",
+//                                         "avatar_url": "https://en.gravatar.com/avatar/14ae79eaaadb9242f5a6bfb1d0f98dc2?d=robohash\u0026s=300",
+//                                         "is_super_admin": true
+//                                     },
+//                                     "description": ""
+//                                 },
+//                                 "latest_bento": {
+//                                     "uid": "65d552f61d9a5b189da830bc1",
+//                                     "created_at": "2024-02-21T01:33:42.276598Z",
+//                                     "updated_at": "2024-02-21T01:33:46.265563Z",
+//                                     "deleted_at": null,
+//                                     "name": "uey2qfwqlcfafnaf",
+//                                     "resource_type": "bento",
+//                                     "labels": [],
+//                                     "bento_repository_uid": "65bca3b59957723bcd6b85083",
+//                                     "creator": {
+//                                         "uid": "65a0ec5f868e104c4e1030d11",
+//                                         "created_at": "2024-01-12T07:38:07.180496Z",
+//                                         "updated_at": "2024-01-15T02:49:09.650689Z",
+//                                         "deleted_at": null,
+//                                         "name": "admin",
+//                                         "resource_type": "user",
+//                                         "labels": [],
+//                                         "first_name": "",
+//                                         "last_name": "",
+//                                         "email": "765961515@qq.com",
+//                                         "avatar_url": "https://en.gravatar.com/avatar/14ae79eaaadb9242f5a6bfb1d0f98dc2?d=robohash\u0026s=300",
+//                                         "is_super_admin": true
+//                                     },
+//                                     "version": "uey2qfwqlcfafnaf",
+//                                     "description": "",
+//                                     "image_build_status": "pending",
+//                                     "upload_status": "success",
+//                                     "upload_started_at": "2024-02-21T01:33:46.264881Z",
+//                                     "upload_finished_at": null,
+//                                     "upload_finished_reason": "",
+//                                     "presigned_upload_url": "",
+//                                     "presigned_download_url": "",
+//                                     "presigned_urls_deprecated": false,
+//                                     "transmission_strategy": "proxy",
+//                                     "upload_id": "",
+//                                     "manifest": {
+//                                         "service": "BentoML_server_json:svc",
+//                                         "bentoml_version": "1.1.11",
+//                                         "apis": {},
+//                                         "models": [],
+//                                         "runners": [
+//                                             {
+//                                                 "name": "vision_detecter_0",
+//                                                 "runnable_type": "Vision_detect_Runnable",
+//                                                 "models": [],
+//                                                 "resource_config": null
+//                                             },
+//                                             {
+//                                                 "name": "vision_detecter_1",
+//                                                 "runnable_type": "Vision_detect_Runnable",
+//                                                 "models": [],
+//                                                 "resource_config": null
+//                                             },
+//                                             {
+//                                                 "name": "vision_detecter_2",
+//                                                 "runnable_type": "Vision_detect_Runnable",
+//                                                 "models": [],
+//                                                 "resource_config": null
+//                                             },
+//                                             {
+//                                                 "name": "vision_detecter_3",
+//                                                 "runnable_type": "Vision_detect_Runnable",
+//                                                 "models": [],
+//                                                 "resource_config": null
+//                                             }
+//                                         ],
+//                                         "size_bytes": 289900720
+//                                     },
+//                                     "build_at": "2024-02-21T01:29:24.91397Z"
+//                                 },
+//                                 "n_bentos": 7,
+//                                 "n_deployments": 0,
+//                                 "latest_bentos": [
+//                                     {
+//                                         "uid": "65d552f61d9a5b189da830bc1",
+//                                         "created_at": "2024-02-21T01:33:42.276598Z",
+//                                         "updated_at": "2024-02-21T01:33:46.265563Z",
+//                                         "deleted_at": null,
+//                                         "name": "uey2qfwqlcfafnaf",
+//                                         "resource_type": "bento",
+//                                         "labels": [],
+//                                         "bento_repository_uid": "65bca3b59957723bcd6b85083",
+//                                         "creator": {
+//                                             "uid": "65a0ec5f868e104c4e1030d11",
+//                                             "created_at": "2024-01-12T07:38:07.180496Z",
+//                                             "updated_at": "2024-01-15T02:49:09.650689Z",
+//                                             "deleted_at": null,
+//                                             "name": "admin",
+//                                             "resource_type": "user",
+//                                             "labels": [],
+//                                             "first_name": "",
+//                                             "last_name": "",
+//                                             "email": "765961515@qq.com",
+//                                             "avatar_url": "https://en.gravatar.com/avatar/14ae79eaaadb9242f5a6bfb1d0f98dc2?d=robohash\u0026s=300",
+//                                             "is_super_admin": true
+//                                         },
+//                                         "version": "uey2qfwqlcfafnaf",
+//                                         "description": "",
+//                                         "image_build_status": "pending",
+//                                         "upload_status": "success",
+//                                         "upload_started_at": "2024-02-21T01:33:46.264881Z",
+//                                         "upload_finished_at": null,
+//                                         "upload_finished_reason": "",
+//                                         "presigned_upload_url": "",
+//                                         "presigned_download_url": "",
+//                                         "presigned_urls_deprecated": false,
+//                                         "transmission_strategy": "proxy",
+//                                         "upload_id": "",
+//                                         "manifest": {
+//                                             "service": "BentoML_server_json:svc",
+//                                             "bentoml_version": "1.1.11",
+//                                             "apis": {},
+//                                             "models": [],
+//                                             "runners": [
+//                                                 {
+//                                                     "name": "vision_detecter_0",
+//                                                     "runnable_type": "Vision_detect_Runnable",
+//                                                     "models": [],
+//                                                     "resource_config": null
+//                                                 },
+//                                                 {
+//                                                     "name": "vision_detecter_1",
+//                                                     "runnable_type": "Vision_detect_Runnable",
+//                                                     "models": [],
+//                                                     "resource_config": null
+//                                                 },
+//                                                 {
+//                                                     "name": "vision_detecter_2",
+//                                                     "runnable_type": "Vision_detect_Runnable",
+//                                                     "models": [],
+//                                                     "resource_config": null
+//                                                 },
+//                                                 {
+//                                                     "name": "vision_detecter_3",
+//                                                     "runnable_type": "Vision_detect_Runnable",
+//                                                     "models": [],
+//                                                     "resource_config": null
+//                                                 }
+//                                             ],
+//                                             "size_bytes": 289900720
+//                                         },
+//                                         "build_at": "2024-02-21T01:29:24.91397Z"
+//                                     },
+//                                     {
+//                                         "uid": "65d49e5331f2f92fcc4b9dec9",
+//                                         "created_at": "2024-02-20T12:42:59.584494Z",
+//                                         "updated_at": "2024-02-20T12:43:03.534978Z",
+//                                         "deleted_at": null,
+//                                         "name": "r5mfvwgp5wbs5naf",
+//                                         "resource_type": "bento",
+//                                         "labels": [],
+//                                         "bento_repository_uid": "65bca3b59957723bcd6b85083",
+//                                         "creator": {
+//                                             "uid": "65a0ec5f868e104c4e1030d11",
+//                                             "created_at": "2024-01-12T07:38:07.180496Z",
+//                                             "updated_at": "2024-01-15T02:49:09.650689Z",
+//                                             "deleted_at": null,
+//                                             "name": "admin",
+//                                             "resource_type": "user",
+//                                             "labels": [],
+//                                             "first_name": "",
+//                                             "last_name": "",
+//                                             "email": "765961515@qq.com",
+//                                             "avatar_url": "https://en.gravatar.com/avatar/14ae79eaaadb9242f5a6bfb1d0f98dc2?d=robohash\u0026s=300",
+//                                             "is_super_admin": true
+//                                         },
+//                                         "version": "r5mfvwgp5wbs5naf",
+//                                         "description": "",
+//                                         "image_build_status": "pending",
+//                                         "upload_status": "success",
+//                                         "upload_started_at": "2024-02-20T12:43:03.534147Z",
+//                                         "upload_finished_at": null,
+//                                         "upload_finished_reason": "",
+//                                         "presigned_upload_url": "",
+//                                         "presigned_download_url": "",
+//                                         "presigned_urls_deprecated": false,
+//                                         "transmission_strategy": "proxy",
+//                                         "upload_id": "",
+//                                         "manifest": {
+//                                             "service": "BentoML_server_json:svc",
+//                                             "bentoml_version": "1.1.11",
+//                                             "apis": {},
+//                                             "models": [],
+//                                             "runners": [
+//                                                 {
+//                                                     "name": "vision_detecter_0",
+//                                                     "runnable_type": "Vision_detect_Runnable",
+//                                                     "models": [],
+//                                                     "resource_config": null
+//                                                 },
+//                                                 {
+//                                                     "name": "vision_detecter_1",
+//                                                     "runnable_type": "Vision_detect_Runnable",
+//                                                     "models": [],
+//                                                     "resource_config": null
+//                                                 },
+//                                                 {
+//                                                     "name": "vision_detecter_2",
+//                                                     "runnable_type": "Vision_detect_Runnable",
+//                                                     "models": [],
+//                                                     "resource_config": null
+//                                                 },
+//                                                 {
+//                                                     "name": "vision_detecter_3",
+//                                                     "runnable_type": "Vision_detect_Runnable",
+//                                                     "models": [],
+//                                                     "resource_config": null
+//                                                 }
+//                                             ],
+//                                             "size_bytes": 289900688
+//                                         },
+//                                         "build_at": "2024-02-20T12:42:59.152805Z"
+//                                     },
+//                                     {
+//                                         "uid": "65d4515816d63e2e436029b65",
+//                                         "created_at": "2024-02-20T07:14:32.506794Z",
+//                                         "updated_at": "2024-02-20T07:14:32.787671Z",
+//                                         "deleted_at": null,
+//                                         "name": "wbac4sgpx6i5xnaf",
+//                                         "resource_type": "bento",
+//                                         "labels": [],
+//                                         "bento_repository_uid": "65bca3b59957723bcd6b85083",
+//                                         "creator": {
+//                                             "uid": "65a0ec5f868e104c4e1030d11",
+//                                             "created_at": "2024-01-12T07:38:07.180496Z",
+//                                             "updated_at": "2024-01-15T02:49:09.650689Z",
+//                                             "deleted_at": null,
+//                                             "name": "admin",
+//                                             "resource_type": "user",
+//                                             "labels": [],
+//                                             "first_name": "",
+//                                             "last_name": "",
+//                                             "email": "765961515@qq.com",
+//                                             "avatar_url": "https://en.gravatar.com/avatar/14ae79eaaadb9242f5a6bfb1d0f98dc2?d=robohash\u0026s=300",
+//                                             "is_super_admin": true
+//                                         },
+//                                         "version": "wbac4sgpx6i5xnaf",
+//                                         "description": "",
+//                                         "image_build_status": "pending",
+//                                         "upload_status": "success",
+//                                         "upload_started_at": "2024-02-20T07:14:32.787103Z",
+//                                         "upload_finished_at": null,
+//                                         "upload_finished_reason": "",
+//                                         "presigned_upload_url": "",
+//                                         "presigned_download_url": "",
+//                                         "presigned_urls_deprecated": false,
+//                                         "transmission_strategy": "proxy",
+//                                         "upload_id": "",
+//                                         "manifest": {
+//                                             "service": "BentoML_server_json:svc",
+//                                             "bentoml_version": "1.1.11",
+//                                             "apis": {},
+//                                             "models": [],
+//                                             "runners": [
+//                                                 {
+//                                                     "name": "vision_detecter_0",
+//                                                     "runnable_type": "Vision_detect_Runnable",
+//                                                     "models": [],
+//                                                     "resource_config": null
+//                                                 },
+//                                                 {
+//                                                     "name": "vision_detecter_1",
+//                                                     "runnable_type": "Vision_detect_Runnable",
+//                                                     "models": [],
+//                                                     "resource_config": null
+//                                                 },
+//                                                 {
+//                                                     "name": "vision_detecter_2",
+//                                                     "runnable_type": "Vision_detect_Runnable",
+//                                                     "models": [],
+//                                                     "resource_config": null
+//                                                 },
+//                                                 {
+//                                                     "name": "vision_detecter_3",
+//                                                     "runnable_type": "Vision_detect_Runnable",
+//                                                     "models": [],
+//                                                     "resource_config": null
+//                                                 }
+//                                             ],
+//                                             "size_bytes": 1840491
+//                                         },
+//                                         "build_at": "2024-02-20T07:14:32.314283Z"
+//                                     }
+//                                 ],
+//                                 "description": ""
+//                             },
+//                             "models": []
+//                         },
+//                         "canary_rules": null,
+//                         "config": {
+//                             "kubeResourceUid": "",
+//                             "kubeResourceVersion": "",
+//                             "resources": {
+//                                 "requests": {
+//                                     "cpu": "500m",
+//                                     "memory": "500Mi"
+//                                 },
+//                                 "limits": {
+//                                     "cpu": "1000m",
+//                                     "memory": "1024Mi"
+//                                 }
+//                             },
+//                             "hpa_conf": {
+//                                 "min_replicas": 2,
+//                                 "max_replicas": 10
+//                             },
+//                             "envs": [],
+//                             "runners": {
+//                                 "vision_detecter_0": {
+//                                     "resources": {
+//                                         "requests": {
+//                                             "cpu": "500m",
+//                                             "memory": "500Mi"
+//                                         },
+//                                         "limits": {
+//                                             "cpu": "1000m",
+//                                             "memory": "1024Mi"
+//                                         }
+//                                     },
+//                                     "hpa_conf": {
+//                                         "min_replicas": 2,
+//                                         "max_replicas": 10
+//                                     },
+//                                     "envs": [],
+//                                     "deployment_strategy": "RollingUpdate"
+//                                 },
+//                                 "vision_detecter_1": {
+//                                     "resources": {
+//                                         "requests": {
+//                                             "cpu": "500m",
+//                                             "memory": "500Mi"
+//                                         },
+//                                         "limits": {
+//                                             "cpu": "1000m",
+//                                             "memory": "1024Mi"
+//                                         }
+//                                     },
+//                                     "hpa_conf": {
+//                                         "min_replicas": 2,
+//                                         "max_replicas": 10
+//                                     },
+//                                     "envs": [],
+//                                     "deployment_strategy": "RollingUpdate"
+//                                 },
+//                                 "vision_detecter_2": {
+//                                     "resources": {
+//                                         "requests": {
+//                                             "cpu": "500m",
+//                                             "memory": "500Mi"
+//                                         },
+//                                         "limits": {
+//                                             "cpu": "1000m",
+//                                             "memory": "1024Mi"
+//                                         }
+//                                     },
+//                                     "hpa_conf": {
+//                                         "min_replicas": 2,
+//                                         "max_replicas": 10
+//                                     },
+//                                     "envs": [],
+//                                     "deployment_strategy": "RollingUpdate"
+//                                 },
+//                                 "vision_detecter_3": {
+//                                     "resources": {
+//                                         "requests": {
+//                                             "cpu": "500m",
+//                                             "memory": "500Mi"
+//                                         },
+//                                         "limits": {
+//                                             "cpu": "1000m",
+//                                             "memory": "1024Mi"
+//                                         }
+//                                     },
+//                                     "hpa_conf": {
+//                                         "min_replicas": 2,
+//                                         "max_replicas": 10
+//                                     },
+//                                     "envs": [],
+//                                     "deployment_strategy": "RollingUpdate"
+//                                 }
+//                             },
+//                             "enable_ingress": true,
+//                             "deployment_strategy": "RollingUpdate"
+//                         }
+//                     }
+//                 ]
+//             },
+//             "kube_namespace": "yatai"
+//         }
+//     ]
+// }

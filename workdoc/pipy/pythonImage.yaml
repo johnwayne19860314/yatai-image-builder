@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: "pyImage"
+  namespace: pypi-mirror
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pyImage
+  template:
+    metadata:
+      labels:
+        app: "pyImage"
+    spec:
+      nodeSelector:
+        kubernetes.io/hostname: pxs-009
+      containers:
+      - name: "pyImage"
+        image: docker.io/pyImage
+        
+        imagePullPolicy: Always
+        
